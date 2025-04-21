@@ -1,0 +1,31 @@
+body{
+    min-height: 600px;
+    border: 1px solid red;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+
+.box{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.child{
+    flex-grow: 1;
+    padding: 30px 50px;
+    background-color: rgb(199, 250, 233);
+}
+
+.child:nth-child(2){
+    align-self: center;
+    background: red;
+    flex-basis: 2;
+}
+.child:nth-child(4){
+    /* align-self: end; */
+    background: red;
+}
